@@ -1,0 +1,579 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+
+/* BODY */
+body{
+  background-color:white;
+  min-height: 200vh;
+}
+
+/* FRONT PAGE */
+
+
+h1{
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.img1{
+  width: 120px;
+  height: auto;
+  border-radius: 50%; 
+}
+.read{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.waterstar{
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  justify-content:space-between;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; 
+  
+}
+h1{
+  color: aliceblue;
+}
+ol{
+  display: flex;
+  color: aliceblue;
+  list-style-type: none;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+li{
+  display:flex;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+/*HOVER PAGE ANIMATION*/
+
+li:hover{
+  transform: scale(1.1);
+  transition: all 2s;
+  cursor:grab;
+  color: bisque;
+}
+.img1:hover{
+  transform: rotateY(360deg);
+  transition: all 2s ease-in-out;
+  background-color: rgba(165, 42, 42, 0);
+}
+/* SECOND PART */
+.div2{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  opacity: inherit;
+  margin-top: 120px;
+  
+} 
+.div3{
+  display: flex;
+  width: 400vw;
+  position: relative;
+  height: auto;
+  animation: slide 25s infinite;
+  z-index: 1;
+}
+img{
+  
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+}
+/* MOBILE MENU-BUTTON */
+.menu-btn {
+    width: 40px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: none; /* hidden in desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 28px;
+}
+
+.menu-btn span {
+    height: 4px;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+}
+.mobile{
+   display: none;
+    flex-direction: column;
+    position: absolute; 
+    top: 70px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    padding: 10px;
+    width: 160px;
+    z-index: 1;
+    transform-origin: top bottom;
+}
+.l1{
+ font-size: 25px;
+ padding: 1px;
+ color: aliceblue;
+ border-bottom: 1px solid black;
+} 
+.l1:last-child{
+  border-bottom: none;
+}
+.div4{
+    width: 100%;
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.div4 h1{
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.div4 p{
+    color: #555;
+    font-size: 18px;
+}
+
+/* THIRD SECTION */
+.section2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.ii1{
+  width: 300px;
+  height: auto;
+  padding: 5px;
+  border-radius: 50%;
+}
+.ii2{
+  width: 300px;
+  height: auto;
+  padding: 5px;
+  border-radius: 50%;
+}
+.ii3{
+  width: 300px;
+  height: auto;
+  padding: 5px;
+  border-radius: 50%;
+}
+.d1 p{
+  width: 400px;
+  line-height: 1.8rem;
+}
+.d2 p{
+  width: 400px;
+  line-height: 1.8rem;
+}
+.d5 p{
+  width: 400px;
+  line-height: 1.8rem;
+}
+/* FOURTH PART */
+.h21{
+  color: black;
+  font-size: 5rem;
+  transition: all 3s;
+}
+.h21:hover{
+  transform: translateX(-50px);
+}
+/* IMAGE LISTS */
+.section3{
+  display: grid;
+  grid-template-columns: repeat(3,0.3fr);
+  gap: 10px;
+  border-radius: 2px solid black;
+  padding: 7rem;
+  grid-area: 1px;
+  place-content: center center;
+  overflow: visible;
+  transition: all 2s ease-in;
+}
+.section3 div{
+  position: relative;
+  border: 2px solid black;
+  width: 205px;
+  background-color: rgb(20, 2, 2);
+  height: 205px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.section3 img{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height:110%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.section3 button{
+  border-radius: 1000px;
+  position: relative;
+  bottom: -65%; /* move to bottom of image */
+ left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 60px;
+  border: none;
+  background-color:#555;
+  color: aliceblue;
+  overflow: visible;
+  z-index: 1;
+  opacity: 0.9;
+}
+a{
+  text-decoration: none;
+} 
+h2{
+  text-align: center;
+  padding: 1rem;
+  background-color: black;
+  color: beige;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* ANIMATION -TIME */
+@keyframes slide{
+  0%{
+    transform: translateX(0%);
+  }
+  25%{
+    transform: translateX(0%);
+  } 
+  30%{
+    transform: translateX(-25%);
+  }
+  50%{
+    transform: translateX(-25%);
+  } 
+  55%{
+    transform: translateX(-50%);
+  } 
+  75%{
+    transform: translateX(-50%);
+  }  
+  85%{
+    transform: translateX(-75%);
+  }
+    
+100%{
+    transform: translateX(-75%);
+  }
+}
+
+/* SCREEN FOR MOBILE */
+@media screen and (min-width:320px) and (max-width:480px){
+  /* LIST LIKE ABOUT US... */
+  ol{
+    display: none;
+  }
+  /* LOGO TITLE NAME */
+  .waterstar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 14px;
+  }
+  /* IMAGE LOGO */
+  .img1{
+    width: 80px;
+  }
+  .read{
+    height: 100px;
+  }
+  h1{
+    width: 90px;    
+    font-size: 25px;
+    word-wrap: break-word;
+  }
+  /* SCREEN RESOLUTION MENU BAR */
+  .menu-btn{
+    display: flex;
+    transition: 2s;
+  }
+  /* HOVER BTN */
+.menu-btn:hover .span1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.menu-btn:hover .span2 {
+    opacity: 0;
+}
+
+.menu-btn:hover .span3 {
+    transform: rotate(45deg) translate(-8px, -6px);
+} 
+
+  /* IMAGE MOVING ANIMATION RESOLUTION */
+  .div2{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  opacity: inherit; 
+  margin-top: 0;
+}
+.div3{
+  display: flex;
+  position: relative;
+  width: 100vw;
+  animation: slides 25s infinite;
+  z-index: 1;
+}
+img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* ANIMATION-TIME */
+@keyframes slides {
+  0%{
+    transform: translateX(0%);
+  }
+  25%{
+    transform: translateX(0%);
+  }
+  35%{
+    transform: translateX(-100%);
+  }
+  45%{
+    transform: translateX(-100%);
+  }
+  55%{
+    transform: translateX(-200%);
+  }
+  65%{
+    transform: translateX(-200%);
+  }
+  75%{
+    transform: translateX(-300%);
+  }
+  100%{
+    transform: translateX(-300%);
+  }
+}
+/* MOBILE MENU-BUTTON */
+.menu-btn {
+    width: 40px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex; /* hidden in desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 28px;
+}
+
+.menu-btn span {
+    height: 4px;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+}
+.mobile{
+   display: none;
+    flex-direction: column;
+    position: absolute; 
+    top: 70px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    padding: 10px;
+    width: 160px;
+    z-index: 1;
+    transform-origin: top bottom;
+}
+.l1{
+ font-size: 25px;
+ padding: 1px;
+ color: aliceblue;
+ border-bottom: 1px solid black;
+} 
+.l1:last-child{
+  border-bottom: none;
+}
+
+
+.menu-btn:hover + .mobile {
+  display: flex;
+  animation: jump 0.5s ease;
+  transform-origin: top bottom;
+  
+}
+@keyframes jump {
+    0%{
+      transform: scaleY(0);
+    }
+    50%{
+      transform: scaleY(1.5);
+    }  
+    100%{
+      transform: scaleY(1);
+    }
+}
+/* THIRD SECTION */
+.div4 h1{
+  font-size: 2rem;
+  width: 100%;
+}
+.section2{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  height: auto;
+  padding: 1.5rem;
+}
+.ii1{
+ margin-left: 45px;
+ width: 250px;
+ padding: 1rem;
+}
+.ii2{
+  padding: 1rem;
+  margin-left: 45px;
+  width: 250px;
+}
+.ii3{
+  padding: 1rem;
+  margin-left: 45px;
+  width: 250px;
+}
+.d1 .p1{
+  width: 350px;
+  font-size: 25px;
+  white-space: wrap;
+}
+.d2 .p2{
+  width: 350px;
+  font-size: 25px;
+  white-space: wrap;
+}
+.d5 .p3{
+  width: 350px;
+  font-size: 25px;
+  white-space: wrap;
+}
+.h21{
+  font-size: 30px;
+  margin-right: 150px;
+  text-wrap: nowrap;
+}
+
+ /* IMAGE LISTS */
+.section3 {
+  display: grid;
+  grid-template-columns: repeat(1, 0.3fr);
+  gap: 10px;
+  padding: 7rem;
+  place-content: center;
+  overflow: visible;
+}
+
+/* Each image card */
+.section3 div {
+  position: relative;
+  width: 205px;
+  height: 205px;
+  background-color: rgb(20, 2, 2);
+  overflow: hidden;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+/* Image — sits behind */
+.section3 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  object-fit: cover;
+  z-index: 0; /* keep image behind */
+}
+
+/* Button — sits above image */
+.section3 button {
+  position: absolute;
+  bottom: 10px; /* move to bottom of image */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* make button visible on top */
+  width: 150px;
+  height: 60px;
+  border: none;
+  border-radius: 1000px;
+  background-color: #555;
+  color: aliceblue;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.section3 button:hover {
+  background-color: #888;
+  transition: 0.3s ease;
+}
+
+
+}
+ 
+
+  
